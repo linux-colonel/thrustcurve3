@@ -20,7 +20,11 @@ services:
       - target: 27017
         published: 27017
         protocol: tcp
+    volumes:
+      - mongo:/data/db
+      - ~/git/thrustcurve3:/root/git/thrustcurve3
 
 
 volumes:
   thrustcurve:
+  mongo:
