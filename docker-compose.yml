@@ -14,5 +14,13 @@ services:
     stdin_open: true
     tty: true
 
+  mongo:
+    image: mongo:latest
+    ports:
+      - target: 27017
+        published: 27017
+        protocol: tcp
+
+
 volumes:
   thrustcurve:
