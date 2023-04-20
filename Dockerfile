@@ -4,6 +4,7 @@ RUN apt-get update && apt-get -y install \
     nodejs \
     npm \
     sudo \
+    tree \
     vim
 
 RUN useradd -m --home-dir /home/thrustcurve --shell /bin/bash thrustcurve
