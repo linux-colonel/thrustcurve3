@@ -1,6 +1,8 @@
 FROM heroku/heroku:22
 
 RUN apt-get update && apt-get -y install \
+    nodejs \
+    npm \
     sudo \
     vim
 
